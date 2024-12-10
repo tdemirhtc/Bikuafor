@@ -4,6 +4,9 @@
 //
 //  Created by Hatice Taşdemir on 4.12.2024.
 //
+//
+
+
 
 import SwiftUI
 import CropViewController
@@ -13,7 +16,6 @@ struct ProfileView: View {
     @State private var username: String = ""
     @State private var email: String = ""
     @State private var profileImageUrl: String? = nil
-    @State private var defaultIcon: String = "person.circle"
     @State private var userId: Int? = UserDefaultManager.getValue(key: "userId") as? Int
     @State private var selectedPhoto: PhotosPickerItem? = nil
     @State private var selectedImage: UIImage? = nil
@@ -26,12 +28,14 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
+
             if let croppedImage = croppedImage {
                 Image(uiImage: croppedImage)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
+                    .onTapGesture { isShowingActionSheet = true }
                 var updateInstance = Update()
 
             } else if let savedData = savedProfileImageData,
@@ -41,6 +45,7 @@ struct ProfileView: View {
                     .scaledToFill()
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
+                    .onTapGesture { isShowingActionSheet = true }
             } else if let imageUrl = profileImageUrl, let url = URL(string: imageUrl) {
                 AsyncImage(url: url) { phase in
                     switch phase {
@@ -54,12 +59,14 @@ struct ProfileView: View {
                             .scaledToFill()
                             .frame(width: 150, height: 150)
                             .clipShape(Circle())
+                            .onTapGesture { isShowingActionSheet = true }
                     case .failure:
                         Image(systemName: "person.circle")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 150, height: 150)
                             .clipShape(Circle())
+                            .onTapGesture { isShowingActionSheet = true }
                     }
                 }
             } else {
@@ -68,9 +75,10 @@ struct ProfileView: View {
                     .scaledToFill()
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
+                    .onTapGesture { isShowingActionSheet = true }
             }
             
-            TextField("Kullanıcı Adı", text: $username)
+            TextField("User Name", text: $username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
@@ -80,8 +88,8 @@ struct ProfileView: View {
             
             Spacer()
             
-            Button("Profili Güncelle") {
-                isShowingActionSheet = true
+            Button("Save") {
+                fetchUserData()
                 
             }
             .padding()
@@ -128,7 +136,29 @@ struct ProfileView: View {
         }
         .padding()
         .onAppear(perform: fetchUserData)
-        .navigationTitle("Profil")
+        .navigationTitle("Profile")
+    }
+    
+    func updateProfile () {
+        guard let croppedImage = croppedImage,
+              let imageData = croppedImage.jpegData(compressionQuality: 0.8) else {
+            print("No image selected")
+            return
+        }
+        let base64Image = imageData.base64EncodedString()
+        UserDefaultManager.setValue(key: "userProfileImageBase64", value: base64Image)
+        var updateInstance = Update()
+        updateInstance.base64logo = base64Image
+        print("Base64 kodlaması Update yapısına atandı: \(updateInstance.base64logo)")
+        
+        updateInstance.updateProfileImage { success, message in
+            if success {
+                print("Profil resmi başarıyla güncellendi: \(message)")
+            } else {
+                print("Profil resmi güncellenemedi: \(message)")
+            }
+        }
+        
     }
     
     func fetchUserData() {
@@ -137,40 +167,14 @@ struct ProfileView: View {
             return
         }
         let request: getOnecustomerRequest = getOnecustomerRequest()
-        request.Id = 130060
+        request.Id = 20110
         
         AuthenticationManager.instance.getOneCustomer(parameters: request, success: { response in
             DispatchQueue.main.async {
                 if let user = response {
                     if let imageUrl = user.ImageUrl, !imageUrl.isEmpty {
                         profileImageUrl = imageUrl
-                        
-                        if let url = URL(string: imageUrl) {
-                            
-                            downloadImageData(from: url) { data in
-                                guard let imageData = data else {
-                                    print("Resim indirilemedi")
-                                    return
-                                }
-                                let base64Image = imageData.base64EncodedString()
-                                UserDefaultManager.setValue(key: "userProfileImageBase64", value: base64Image)
-                                
-                              
-                                var updateInstance = Update()
-                                updateInstance.base64logo = base64Image
-                                print("Base64 kodlaması Update yapısına atandı: \(updateInstance.base64logo)")
-                                
-                                updateInstance.updateProfileImage { success, message in
-                                    if success {
-                                        print("Profil resmi başarıyla güncellendi: \(message)")
-                                    } else {
-                                        print("Profil resmi güncellenemedi: \(message)")
-                                    }
-                                }
-                            }
-                        } else {
-                            print("Geçersiz URL")
-                        }
+                      
                     } else {
                         profileImageUrl = nil
                         print("Geçersiz veya boş ImageUrl")
@@ -206,7 +210,6 @@ struct ProfileView: View {
     
     
 }
-
 
 struct ImagePicker: UIViewControllerRepresentable {
     var sourceType: UIImagePickerController.SourceType

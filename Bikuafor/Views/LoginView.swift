@@ -40,7 +40,7 @@ struct LoginView: View {
     }
     func login() {
         let request = LoginRequest()
-        request.Username = "bn@gmail.com"
+        request.Username = "haticetasdemir@gmail.com"
         request.Password = "112233"
         
         AuthenticationManager.instance.login(parameters: request, success: { response in

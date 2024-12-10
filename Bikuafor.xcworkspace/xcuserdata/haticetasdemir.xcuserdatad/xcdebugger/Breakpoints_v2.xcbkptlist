@@ -247,100 +247,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FA065FBD-21FA-4128-B375-06A90FD99482"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2CACC51C-98A4-42A7-B9DF-AD0DF163700C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4FFD709A-87A9-4959-BB6C-938A792A3918"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "25D1B156-41ED-4460-A172-F949381F2F95"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "25D1B156-41ED-4460-A172-F949381F2F95 - 347a7030c7779346"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Bikuafor.getOneCustomerResponse&gt;) -&gt; () in Bikuafor.ProfileView.fetchUserData() -&gt; ()"
-                  moduleName = "Bikuafor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haticetasdemir/Desktop/elektrosoft/Bikuafor/Bikuafor/Views/ProfileView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163">
-               </Location>
-               <Location
-                  uuid = "25D1B156-41ED-4460-A172-F949381F2F95 - 1a2cbc25014a98a0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Bikuafor.getOneCustomerResponse&gt;) -&gt; () in Bikuafor.ProfileView.fetchUserData() -&gt; ()"
-                  moduleName = "Bikuafor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haticetasdemir/Desktop/elektrosoft/Bikuafor/Bikuafor/Views/ProfileView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "163"
-                  endingLineNumber = "163">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "739261C2-1755-4E9A-9FE4-3FA9F574B291"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -348,41 +254,9 @@
             filePath = "Bikuafor/Views/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "downloadImageData(from:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8D42FD24-C845-42FD-B46C-09E08091F105"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7CF14CDF-B9E5-4507-AD88-57034646810B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "fetchUserData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -396,56 +270,10 @@
             filePath = "Bikuafor/Views/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "fetchUserData()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E105A72-9A12-439C-9F19-D7304E337352"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bikuafor/Views/ProfileView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "fetchUserData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0E105A72-9A12-439C-9F19-D7304E337352 - 544163301d72242c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Bikuafor.getOneCustomerResponse&gt;) -&gt; () in Bikuafor.ProfileView.fetchUserData() -&gt; ()"
-                  moduleName = "Bikuafor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haticetasdemir/Desktop/elektrosoft/Bikuafor/Bikuafor/Views/ProfileView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148">
-               </Location>
-               <Location
-                  uuid = "0E105A72-9A12-439C-9F19-D7304E337352 - 544163301d72242c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Bikuafor.getOneCustomerResponse&gt;) -&gt; () in Bikuafor.ProfileView.fetchUserData() -&gt; ()"
-                  moduleName = "Bikuafor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haticetasdemir/Desktop/elektrosoft/Bikuafor/Bikuafor/Views/ProfileView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
