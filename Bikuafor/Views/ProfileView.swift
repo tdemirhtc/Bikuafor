@@ -6,20 +6,18 @@
 //
 //
 
-
-
 import SwiftUI
-import CropViewController
 import PhotosUI
+import RSKImageCropper
 
 struct ProfileView: View {
     @State private var username: String = ""
     @State private var email: String = ""
     @State private var profileImageUrl: String? = nil
     @State private var userId: Int? = UserDefaultManager.getValue(key: "userId") as? Int
-    @State private var selectedPhoto: PhotosPickerItem? = nil
-    @State private var selectedImage: UIImage? = nil
-    @State private var isPresentingCropView = false
+    @State public var selectedPhoto: PhotosPickerItem? = nil
+    @State public var selectedImage: UIImage? = nil
+    @State public var isPresentingCropView : Bool = true
     @State private var croppedImage: UIImage? = nil
     @State private var isPresentingCamera = false
     @State private var isShowingActionSheet = false
@@ -28,7 +26,6 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
-
             if let croppedImage = croppedImage {
                 Image(uiImage: croppedImage)
                     .resizable()
@@ -36,7 +33,6 @@ struct ProfileView: View {
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .onTapGesture { isShowingActionSheet = true }
-                var updateInstance = Update()
 
             } else if let savedData = savedProfileImageData,
                       let savedImage = UIImage(data: savedData) {
@@ -89,7 +85,7 @@ struct ProfileView: View {
             Spacer()
             
             Button("Save") {
-                fetchUserData()
+                updateProfile()
                 
             }
             .padding()
@@ -115,20 +111,28 @@ struct ProfileView: View {
                 ImagePicker(sourceType: .camera, selectedImage: $selectedImage, isPresentingCropView: $isPresentingCropView)
             }
             .photosPicker(isPresented: $isPresentingPhotosPicker, selection: $selectedPhoto, matching: .images)
-            .onChange(of: selectedPhoto) { newValue in
-                Task {
-                    if let data = try? await newValue?.loadTransferable(type: Data.self),
-                       let uiImage = UIImage(data: data) {
-                        DispatchQueue.main.async {
+            .onChange(of: selectedPhoto, perform: { newValue in
+                if ((newValue?.hashValue) != nil){
+                    Task {
+                        if let data = try? await newValue?.loadTransferable(type: Data.self),
+                           let uiImage = UIImage(data: data) {
+                            print("Selected image: \(selectedImage != nil ? "Image loaded" : "No image")")
                             selectedImage = uiImage
                             isPresentingCropView = true
+                            
+                        } else {
+                            print("resim yüklenemedi")
                         }
                     }
                 }
-            }
+                    
+            })
             .sheet(isPresented: $isPresentingCropView) {
                 if let image = selectedImage {
-                    CropViewControllerWrapper(image: image, croppedImage: $croppedImage, isPresented: $isPresentingCropView)
+                    RSKImageCropperWrapper(image: image, croppedImage: $croppedImage, isPresented: $isPresentingCropView)
+                        .onAppear{
+                            print("Çalıştı")
+                        }
                 } else {
                     Text("loading Image...")
                 }
@@ -190,7 +194,7 @@ struct ProfileView: View {
             }
         })
     }
-    
+
     
     func downloadImageData(from url: URL, completion: @escaping (Data?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -253,49 +257,40 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
 }
 
-struct CropViewControllerWrapper: UIViewControllerRepresentable {
+struct RSKImageCropperWrapper: UIViewControllerRepresentable {
     var image: UIImage
     @Binding var croppedImage: UIImage?
     @Binding var isPresented: Bool
-    
-    func makeUIViewController(context: Context) -> TOCropViewController {
-        let cropViewController = TOCropViewController(image: image)
-        
-        cropViewController.aspectRatioPreset = .presetSquare
-        cropViewController.aspectRatioLockEnabled = true
-        cropViewController.resetAspectRatioEnabled = false
-        
+
+    func makeUIViewController(context: Context) -> RSKImageCropViewController {
+        let cropViewController = RSKImageCropViewController(image: image, cropMode: .circle)
         cropViewController.delegate = context.coordinator
         return cropViewController
     }
-    
-    func updateUIViewController(_ uiViewController: TOCropViewController, context: Context) {}
-    
+
+    func updateUIViewController(_ uiViewController: RSKImageCropViewController, context: Context) {}
+
     func makeCoordinator() -> Coordinator {
         return Coordinator(self)
     }
-    
-    class Coordinator: NSObject, TOCropViewControllerDelegate {
-        var parent: CropViewControllerWrapper
-        
-        init(_ parent: CropViewControllerWrapper) {
+
+    class Coordinator: NSObject, RSKImageCropViewControllerDelegate {
+        var parent: RSKImageCropperWrapper
+
+        init(_ parent: RSKImageCropperWrapper) {
             self.parent = parent
         }
-        
-        func cropViewController(_ cropViewController: TOCropViewController, didCropTo image: UIImage, with cropRect: CGRect, angle: Int) {
-            parent.croppedImage = image
+
+        func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
+            parent.croppedImage = croppedImage
             parent.isPresented = false
         }
-        
-        
-        func cropViewController(_ cropViewController: TOCropViewController, didFinishCancelled cancelled: Bool) {
+
+        func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
             parent.isPresented = false
         }
     }
 }
-
-
-
 
 #Preview {
     ProfileView()

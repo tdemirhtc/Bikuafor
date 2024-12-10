@@ -181,6 +181,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CDAlertView/CDAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -189,6 +190,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CDAlertView/CDAlertView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -12,6 +12,7 @@ target 'Bikuafor' do
   pod 'ObjectMapper'
   pod "CDAlertView"
   pod 'CropViewController'
+  pod 'RSKImageCropper'
 
 
   # Pods for Bikuafor

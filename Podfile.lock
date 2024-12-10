@@ -6,6 +6,7 @@ PODS:
   - CDAlertView (0.11.0)
   - CropViewController (2.7.4)
   - ObjectMapper (3.5.3)
+  - RSKImageCropper (5.0.0)
   - SwiftLoader (1.0.0)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - CDAlertView
   - CropViewController
   - ObjectMapper
+  - RSKImageCropper
   - SwiftLoader
 
 SPEC REPOS:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - CDAlertView
     - CropViewController
     - ObjectMapper
+    - RSKImageCropper
     - SwiftLoader
 
 SPEC CHECKSUMS:
@@ -31,8 +34,9 @@ SPEC CHECKSUMS:
   CDAlertView: cd6624e857c85ad14560e2cd23d7eb25b983b590
   CropViewController: 3489bbf95a3e11c654382b0bae08ac645cdf1b93
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  RSKImageCropper: d75b28a83673edb7bef40ad6287835cdcb732093
   SwiftLoader: f12f3a6fb42576862a3a5eb80c7e59fc881b6982
 
-PODFILE CHECKSUM: f9a19bb0be67608ebf7a375a46d861e4072a0bca
+PODFILE CHECKSUM: 6cd651897ffd02429be649fc0dc3308a180930c4
 
 COCOAPODS: 1.15.2
