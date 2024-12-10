@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/CDAlertView/CDAlertView.framework
+${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework

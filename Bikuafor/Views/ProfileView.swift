@@ -146,7 +146,7 @@ struct ProfileView: View {
                         profileImageUrl = imageUrl
                         
                         if let url = URL(string: imageUrl) {
-                            // Resmi asenkron olarak indir
+                            
                             downloadImageData(from: url) { data in
                                 guard let imageData = data else {
                                     print("Resim indirilemedi")
@@ -155,7 +155,7 @@ struct ProfileView: View {
                                 let base64Image = imageData.base64EncodedString()
                                 UserDefaultManager.setValue(key: "userProfileImageBase64", value: base64Image)
                                 
-                                // Update yapısını oluştur ve profil resmini güncelle
+                              
                                 var updateInstance = Update()
                                 updateInstance.base64logo = base64Image
                                 print("Base64 kodlaması Update yapısına atandı: \(updateInstance.base64logo)")
@@ -187,7 +187,7 @@ struct ProfileView: View {
         })
     }
     
-    // Asenkron resim indirme fonksiyonu
+    
     func downloadImageData(from url: URL, completion: @escaping (Data?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {

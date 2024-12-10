@@ -1,0 +1,6 @@
+framework module Pods_Bikuafor_BikuaforUITests {
+  umbrella header "Pods-Bikuafor-BikuaforUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - CDAlertView (0.11.0)
+  - CropViewController (2.7.4)
+  - ObjectMapper (3.5.3)
+  - SwiftLoader (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.2)
+  - AlamofireObjectMapper (~> 6.0)
+  - CDAlertView
+  - CropViewController
+  - ObjectMapper
+  - SwiftLoader
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - CDAlertView
+    - CropViewController
+    - ObjectMapper
+    - SwiftLoader
+
+SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  CDAlertView: cd6624e857c85ad14560e2cd23d7eb25b983b590
+  CropViewController: 3489bbf95a3e11c654382b0bae08ac645cdf1b93
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SwiftLoader: f12f3a6fb42576862a3a5eb80c7e59fc881b6982
+
+PODFILE CHECKSUM: f9a19bb0be67608ebf7a375a46d861e4072a0bca
+
+COCOAPODS: 1.15.2

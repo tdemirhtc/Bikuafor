@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654D97642CF9AB9B00C4EDB7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654D97632CF9AB9B00C4EDB7 /* LoginView.swift */; };
+		654D97662CF9B73E00C4EDB7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654D97652CF9B73D00C4EDB7 /* UserManager.swift */; };
+		655504782CF746190009B927 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655504772CF746190009B927 /* AlertManager.swift */; };
+		6555047C2CF7578D0009B927 /* FindClosestSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555047B2CF7578D0009B927 /* FindClosestSalons.swift */; };
+		6555047E2CF757C20009B927 /* FindClosestSalonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555047D2CF757C20009B927 /* FindClosestSalonsResponse.swift */; };
+		655504812CF916990009B927 /* SalonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655504802CF916990009B927 /* SalonListView.swift */; };
 		655BD3052CF72925001EE981 /* BikuaforApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3042CF72925001EE981 /* BikuaforApp.swift */; };
 		655BD3072CF72925001EE981 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3062CF72925001EE981 /* ContentView.swift */; };
 		655BD3092CF72927001EE981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655BD3082CF72927001EE981 /* Assets.xcassets */; };
@@ -14,6 +20,27 @@
 		655BD3162CF72927001EE981 /* BikuaforTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3152CF72927001EE981 /* BikuaforTests.swift */; };
 		655BD3202CF72927001EE981 /* BikuaforUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD31F2CF72927001EE981 /* BikuaforUITests.swift */; };
 		655BD3222CF72927001EE981 /* BikuaforUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3212CF72927001EE981 /* BikuaforUITestsLaunchTests.swift */; };
+		655BD3352CF73485001EE981 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3342CF73485001EE981 /* LoginRequest.swift */; };
+		655BD3372CF73494001EE981 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3362CF73494001EE981 /* LoginResponse.swift */; };
+		655BD3392CF7351B001EE981 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3382CF7351B001EE981 /* BaseModel.swift */; };
+		655BD33B2CF73528001EE981 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD33A2CF73528001EE981 /* BaseResponse.swift */; };
+		655BD33D2CF7372E001EE981 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD33C2CF7372E001EE981 /* StaticVariables.swift */; };
+		655BD3412CF73782001EE981 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3402CF73782001EE981 /* ResponseResult.swift */; };
+		655BD3432CF73905001EE981 /* AuthanticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3422CF73905001EE981 /* AuthanticationManager.swift */; };
+		655BD3452CF73A70001EE981 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3442CF73A70001EE981 /* BaseManager.swift */; };
+		655BD3472CF73ADC001EE981 /* ResultValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3462CF73ADC001EE981 /* ResultValidation.swift */; };
+		655BD3492CF73B4E001EE981 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD3482CF73B4E001EE981 /* Alamofire.swift */; };
+		655BD34B2CF73B6E001EE981 /* RestApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD34A2CF73B6E001EE981 /* RestApiUrl.swift */; };
+		655BD34D2CF73C10001EE981 /* BaseParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655BD34C2CF73C10001EE981 /* BaseParameter.swift */; };
+		656F80192CFDE5E800DCF438 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F80182CFDE5E800DCF438 /* Ratings.swift */; };
+		65721DF92D0088C500592C3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65721DF82D0088C500592C3F /* ProfileView.swift */; };
+		65721DFB2D00984D00592C3F /* getOneCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65721DFA2D00984D00592C3F /* getOneCustomer.swift */; };
+		65721DFF2D0099D100592C3F /* getOneCustomerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65721DFE2D0099D100592C3F /* getOneCustomerResponse.swift */; };
+		65A7BFEC2CF9F48400BF1D41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7BFEB2CF9F48400BF1D41 /* DetailView.swift */; };
+		65FFF28F2D01DA8800E3B824 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFF28E2D01DA8800E3B824 /* Update.swift */; };
+		A2DCF0E166FA9B7BF9435BBE /* Pods_Bikuafor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6EEBDC257545A7B7BE5C63 /* Pods_Bikuafor.framework */; };
+		B07F47F5DEA946C5D2918707 /* Pods_BikuaforTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3607B3343CD54426EECBE7 /* Pods_BikuaforTests.framework */; };
+		F61A9D82324A5A694DA871FD /* Pods_Bikuafor_BikuaforUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA87775D9396664AD13C5E00 /* Pods_Bikuafor_BikuaforUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F3607B3343CD54426EECBE7 /* Pods_BikuaforTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikuaforTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5ADF9DA6A5520DC00F14C7 /* Pods-BikuaforTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikuaforTests.release.xcconfig"; path = "Target Support Files/Pods-BikuaforTests/Pods-BikuaforTests.release.xcconfig"; sourceTree = "<group>"; };
+		654D97632CF9AB9B00C4EDB7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		654D97652CF9B73D00C4EDB7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		655504772CF746190009B927 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		6555047B2CF7578D0009B927 /* FindClosestSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestSalons.swift; sourceTree = "<group>"; };
+		6555047D2CF757C20009B927 /* FindClosestSalonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestSalonsResponse.swift; sourceTree = "<group>"; };
+		655504802CF916990009B927 /* SalonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonListView.swift; sourceTree = "<group>"; };
 		655BD3012CF72925001EE981 /* Bikuafor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bikuafor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655BD3042CF72925001EE981 /* BikuaforApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikuaforApp.swift; sourceTree = "<group>"; };
 		655BD3062CF72925001EE981 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +79,31 @@
 		655BD31B2CF72927001EE981 /* BikuaforUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikuaforUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655BD31F2CF72927001EE981 /* BikuaforUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikuaforUITests.swift; sourceTree = "<group>"; };
 		655BD3212CF72927001EE981 /* BikuaforUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikuaforUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		655BD3342CF73485001EE981 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		655BD3362CF73494001EE981 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		655BD3382CF7351B001EE981 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		655BD33A2CF73528001EE981 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		655BD33C2CF7372E001EE981 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
+		655BD3402CF73782001EE981 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		655BD3422CF73905001EE981 /* AuthanticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthanticationManager.swift; sourceTree = "<group>"; };
+		655BD3442CF73A70001EE981 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		655BD3462CF73ADC001EE981 /* ResultValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultValidation.swift; sourceTree = "<group>"; };
+		655BD3482CF73B4E001EE981 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		655BD34A2CF73B6E001EE981 /* RestApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiUrl.swift; sourceTree = "<group>"; };
+		655BD34C2CF73C10001EE981 /* BaseParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParameter.swift; sourceTree = "<group>"; };
+		656F80182CFDE5E800DCF438 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		65721DF82D0088C500592C3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		65721DFA2D00984D00592C3F /* getOneCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getOneCustomer.swift; sourceTree = "<group>"; };
+		65721DFE2D0099D100592C3F /* getOneCustomerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getOneCustomerResponse.swift; sourceTree = "<group>"; };
+		65A7BFEB2CF9F48400BF1D41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		65FFF28E2D01DA8800E3B824 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		701DA2A9E7C196664AB2C25E /* Pods-Bikuafor-BikuaforUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikuafor-BikuaforUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A4D139AFC85BF5E8173FB70 /* Pods-Bikuafor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikuafor.debug.xcconfig"; path = "Target Support Files/Pods-Bikuafor/Pods-Bikuafor.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6EEBDC257545A7B7BE5C63 /* Pods_Bikuafor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bikuafor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA87775D9396664AD13C5E00 /* Pods_Bikuafor_BikuaforUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bikuafor_BikuaforUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97908C72105E7011130A5DF /* Pods-Bikuafor-BikuaforUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikuafor-BikuaforUITests.release.xcconfig"; path = "Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBEB26A721D4B4AA7EBF0F7B /* Pods-BikuaforTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikuaforTests.debug.xcconfig"; path = "Target Support Files/Pods-BikuaforTests/Pods-BikuaforTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F526D0BB6F98134D99E28D4F /* Pods-Bikuafor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikuafor.release.xcconfig"; path = "Target Support Files/Pods-Bikuafor/Pods-Bikuafor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DCF0E166FA9B7BF9435BBE /* Pods_Bikuafor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F47F5DEA946C5D2918707 /* Pods_BikuaforTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +127,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F61A9D82324A5A694DA871FD /* Pods_Bikuafor_BikuaforUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6555047F2CF916650009B927 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				655BD3062CF72925001EE981 /* ContentView.swift */,
+				655504802CF916990009B927 /* SalonListView.swift */,
+				654D97632CF9AB9B00C4EDB7 /* LoginView.swift */,
+				65A7BFEB2CF9F48400BF1D41 /* DetailView.swift */,
+				656F80182CFDE5E800DCF438 /* Ratings.swift */,
+				65721DF82D0088C500592C3F /* ProfileView.swift */,
+				65FFF28E2D01DA8800E3B824 /* Update.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		655BD2F82CF72925001EE981 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +155,8 @@
 				655BD3142CF72927001EE981 /* BikuaforTests */,
 				655BD31E2CF72927001EE981 /* BikuaforUITests */,
 				655BD3022CF72925001EE981 /* Products */,
+				92F7FD6B50A25E5DFCB8DE0E /* Pods */,
+				805AEAF226EF5254DD3098FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +173,9 @@
 		655BD3032CF72925001EE981 /* Bikuafor */ = {
 			isa = PBXGroup;
 			children = (
+				6555047F2CF916650009B927 /* Views */,
+				655BD3302CF73412001EE981 /* Helper */,
 				655BD3042CF72925001EE981 /* BikuaforApp.swift */,
-				655BD3062CF72925001EE981 /* ContentView.swift */,
 				655BD3082CF72927001EE981 /* Assets.xcassets */,
 				655BD30A2CF72927001EE981 /* Preview Content */,
 			);
@@ -127,6 +207,78 @@
 			path = BikuaforUITests;
 			sourceTree = "<group>";
 		};
+		655BD3302CF73412001EE981 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				655BD3322CF7342C001EE981 /* Manager */,
+				655BD3312CF7341F001EE981 /* DTO */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		655BD3312CF7341F001EE981 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				655BD3332CF73437001EE981 /* Login */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		655BD3322CF7342C001EE981 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				655BD3382CF7351B001EE981 /* BaseModel.swift */,
+				655BD33A2CF73528001EE981 /* BaseResponse.swift */,
+				655BD33C2CF7372E001EE981 /* StaticVariables.swift */,
+				655BD3402CF73782001EE981 /* ResponseResult.swift */,
+				655BD3422CF73905001EE981 /* AuthanticationManager.swift */,
+				655BD3442CF73A70001EE981 /* BaseManager.swift */,
+				655BD3462CF73ADC001EE981 /* ResultValidation.swift */,
+				655BD3482CF73B4E001EE981 /* Alamofire.swift */,
+				655BD34A2CF73B6E001EE981 /* RestApiUrl.swift */,
+				655BD34C2CF73C10001EE981 /* BaseParameter.swift */,
+				655504772CF746190009B927 /* AlertManager.swift */,
+				654D97652CF9B73D00C4EDB7 /* UserManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		655BD3332CF73437001EE981 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				655BD3342CF73485001EE981 /* LoginRequest.swift */,
+				655BD3362CF73494001EE981 /* LoginResponse.swift */,
+				6555047B2CF7578D0009B927 /* FindClosestSalons.swift */,
+				6555047D2CF757C20009B927 /* FindClosestSalonsResponse.swift */,
+				65721DFA2D00984D00592C3F /* getOneCustomer.swift */,
+				65721DFE2D0099D100592C3F /* getOneCustomerResponse.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		805AEAF226EF5254DD3098FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6EEBDC257545A7B7BE5C63 /* Pods_Bikuafor.framework */,
+				BA87775D9396664AD13C5E00 /* Pods_Bikuafor_BikuaforUITests.framework */,
+				1F3607B3343CD54426EECBE7 /* Pods_BikuaforTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92F7FD6B50A25E5DFCB8DE0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A4D139AFC85BF5E8173FB70 /* Pods-Bikuafor.debug.xcconfig */,
+				F526D0BB6F98134D99E28D4F /* Pods-Bikuafor.release.xcconfig */,
+				701DA2A9E7C196664AB2C25E /* Pods-Bikuafor-BikuaforUITests.debug.xcconfig */,
+				D97908C72105E7011130A5DF /* Pods-Bikuafor-BikuaforUITests.release.xcconfig */,
+				EBEB26A721D4B4AA7EBF0F7B /* Pods-BikuaforTests.debug.xcconfig */,
+				2A5ADF9DA6A5520DC00F14C7 /* Pods-BikuaforTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 655BD3252CF72927001EE981 /* Build configuration list for PBXNativeTarget "Bikuafor" */;
 			buildPhases = (
+				2A030E8C9E219161EFD68ABD /* [CP] Check Pods Manifest.lock */,
 				655BD2FD2CF72925001EE981 /* Sources */,
 				655BD2FE2CF72925001EE981 /* Frameworks */,
 				655BD2FF2CF72925001EE981 /* Resources */,
+				3D59A322CCB9638DC7EE11F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 655BD3282CF72927001EE981 /* Build configuration list for PBXNativeTarget "BikuaforTests" */;
 			buildPhases = (
+				CDE5F62EF8B8E5C618EA253A /* [CP] Check Pods Manifest.lock */,
 				655BD30D2CF72927001EE981 /* Sources */,
 				655BD30E2CF72927001EE981 /* Frameworks */,
 				655BD30F2CF72927001EE981 /* Resources */,
@@ -169,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 655BD32B2CF72927001EE981 /* Build configuration list for PBXNativeTarget "BikuaforUITests" */;
 			buildPhases = (
+				AAA1F4354A8E8D4E33B128B9 /* [CP] Check Pods Manifest.lock */,
 				655BD3172CF72927001EE981 /* Sources */,
 				655BD3182CF72927001EE981 /* Frameworks */,
 				655BD3192CF72927001EE981 /* Resources */,
+				2B8B01CEF25C7702388E0329 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,13 +409,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A030E8C9E219161EFD68ABD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bikuafor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8B01CEF25C7702388E0329 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bikuafor-BikuaforUITests/Pods-Bikuafor-BikuaforUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D59A322CCB9638DC7EE11F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bikuafor/Pods-Bikuafor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bikuafor/Pods-Bikuafor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bikuafor/Pods-Bikuafor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA1F4354A8E8D4E33B128B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bikuafor-BikuaforUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE5F62EF8B8E5C618EA253A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikuaforTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		655BD2FD2CF72925001EE981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6555047C2CF7578D0009B927 /* FindClosestSalons.swift in Sources */,
+				6555047E2CF757C20009B927 /* FindClosestSalonsResponse.swift in Sources */,
+				655BD3452CF73A70001EE981 /* BaseManager.swift in Sources */,
+				655BD3352CF73485001EE981 /* LoginRequest.swift in Sources */,
+				655504782CF746190009B927 /* AlertManager.swift in Sources */,
 				655BD3072CF72925001EE981 /* ContentView.swift in Sources */,
+				656F80192CFDE5E800DCF438 /* Ratings.swift in Sources */,
+				655BD3432CF73905001EE981 /* AuthanticationManager.swift in Sources */,
+				65FFF28F2D01DA8800E3B824 /* Update.swift in Sources */,
+				655BD34D2CF73C10001EE981 /* BaseParameter.swift in Sources */,
+				655BD3372CF73494001EE981 /* LoginResponse.swift in Sources */,
+				655BD33B2CF73528001EE981 /* BaseResponse.swift in Sources */,
+				65A7BFEC2CF9F48400BF1D41 /* DetailView.swift in Sources */,
+				655BD3492CF73B4E001EE981 /* Alamofire.swift in Sources */,
 				655BD3052CF72925001EE981 /* BikuaforApp.swift in Sources */,
+				655504812CF916990009B927 /* SalonListView.swift in Sources */,
+				655BD3472CF73ADC001EE981 /* ResultValidation.swift in Sources */,
+				655BD34B2CF73B6E001EE981 /* RestApiUrl.swift in Sources */,
+				65721DF92D0088C500592C3F /* ProfileView.swift in Sources */,
+				655BD3412CF73782001EE981 /* ResponseResult.swift in Sources */,
+				65721DFB2D00984D00592C3F /* getOneCustomer.swift in Sources */,
+				65721DFF2D0099D100592C3F /* getOneCustomerResponse.swift in Sources */,
+				654D97642CF9AB9B00C4EDB7 /* LoginView.swift in Sources */,
+				655BD33D2CF7372E001EE981 /* StaticVariables.swift in Sources */,
+				654D97662CF9B73E00C4EDB7 /* UserManager.swift in Sources */,
+				655BD3392CF7351B001EE981 /* BaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +616,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +679,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +700,7 @@
 		};
 		655BD3262CF72927001EE981 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4D139AFC85BF5E8173FB70 /* Pods-Bikuafor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +730,7 @@
 		};
 		655BD3272CF72927001EE981 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F526D0BB6F98134D99E28D4F /* Pods-Bikuafor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +760,7 @@
 		};
 		655BD3292CF72927001EE981 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEB26A721D4B4AA7EBF0F7B /* Pods-BikuaforTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +781,7 @@
 		};
 		655BD32A2CF72927001EE981 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5ADF9DA6A5520DC00F14C7 /* Pods-BikuaforTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +802,7 @@
 		};
 		655BD32C2CF72927001EE981 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701DA2A9E7C196664AB2C25E /* Pods-Bikuafor-BikuaforUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +821,7 @@
 		};
 		655BD32D2CF72927001EE981 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97908C72105E7011130A5DF /* Pods-Bikuafor-BikuaforUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
