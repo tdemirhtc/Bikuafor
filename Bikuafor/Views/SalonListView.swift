@@ -110,7 +110,22 @@ struct SalonListView: View {
         AuthenticationManager.instance.FindClosestSalons(parameters: request, success: { response in
             
             response?.list?.forEach{ a in
-                mymodel.append(MyModel(id:a.Id!, bgImage: a.BackgroundImageUrl ?? "", salonTitle: a.Title!, rating: a.Rating!, isFavorite: a.IsFavorite, profileImg: a.ProfileImageUrl ?? "", adress: a.Address ?? "", distance: a.DistanceStr ?? ""))
+                if let id = a.Id,
+                   let title = a.Title {
+                    mymodel.append(MyModel(
+                        id: id,
+                        bgImage: a.BackgroundImageUrl ?? "",
+                        salonTitle: title,
+                        rating: a.Rating ?? 0.0,
+                        isFavorite: a.IsFavorite ?? 0,
+                        profileImg: a.ProfileImageUrl ?? "",
+                        adress: a.Address ?? "",
+                        distance: a.DistanceStr ?? ""
+                    ))
+                } else {
+                    print("Bazı zorunlu alanlar nil geldi.")
+                }
+
             }
             
             
@@ -120,11 +135,3 @@ struct SalonListView: View {
         }
     }
 }
-
-
-
-
-
-
-
-

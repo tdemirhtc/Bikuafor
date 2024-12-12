@@ -17,7 +17,7 @@ struct ProfileView: View {
     @State private var userId: Int? = UserDefaultManager.getValue(key: "userId") as? Int
     @State public var selectedPhoto: PhotosPickerItem? = nil
     @State public var selectedImage: UIImage? = nil
-    @State public var isPresentingCropView : Bool = true
+    @State var isPresentingCropView : Bool = false
     @State private var croppedImage: UIImage? = nil
     @State private var isPresentingCamera = false
     @State private var isShowingActionSheet = false
@@ -111,32 +111,30 @@ struct ProfileView: View {
                 ImagePicker(sourceType: .camera, selectedImage: $selectedImage, isPresentingCropView: $isPresentingCropView)
             }
             .photosPicker(isPresented: $isPresentingPhotosPicker, selection: $selectedPhoto, matching: .images)
-            .onChange(of: selectedPhoto, perform: { newValue in
-                if ((newValue?.hashValue) != nil){
-                    Task {
-                        if let data = try? await newValue?.loadTransferable(type: Data.self),
-                           let uiImage = UIImage(data: data) {
-                            print("Selected image: \(selectedImage != nil ? "Image loaded" : "No image")")
-                            selectedImage = uiImage
-                            isPresentingCropView = true
-                            
-                        } else {
-                            print("resim yüklenemedi")
+            .onChange(of: selectedPhoto) { newValue in
+                guard let newValue = newValue else { return }
+                Task {
+                    if let data = try? await newValue.loadTransferable(type: Data.self),
+                       let uiImage = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self.selectedImage = uiImage
+                            self.isPresentingCropView = true // Burada, `selectedImage` ayarlandıktan sonra işleme izin veriyoruz.
                         }
+                    } else {
+                        print("Resim yüklenemedi")
                     }
                 }
-                    
-            })
-            .sheet(isPresented: $isPresentingCropView) {
+            }
+
+            .sheet(isPresented: Binding(
+                get: { isPresentingCropView && selectedImage != nil },
+                set: { isPresentingCropView = $0 }
+            )) {
                 if let image = selectedImage {
                     RSKImageCropperWrapper(image: image, croppedImage: $croppedImage, isPresented: $isPresentingCropView)
-                        .onAppear{
-                            print("Çalıştı")
-                        }
-                } else {
-                    Text("loading Image...")
                 }
             }
+
         }
         .padding()
         .onAppear(perform: fetchUserData)
@@ -171,7 +169,7 @@ struct ProfileView: View {
             return
         }
         let request: getOnecustomerRequest = getOnecustomerRequest()
-        request.Id = 20110
+        request.Id = 20006
         
         AuthenticationManager.instance.getOneCustomer(parameters: request, success: { response in
             DispatchQueue.main.async {
@@ -295,4 +293,3 @@ struct RSKImageCropperWrapper: UIViewControllerRepresentable {
 #Preview {
     ProfileView()
 }
-
